@@ -1,6 +1,7 @@
 package Logica;
 import java.util.Scanner;
 /*
+Equipe:
 @author André
 @author Lucas
 @author Valmir
