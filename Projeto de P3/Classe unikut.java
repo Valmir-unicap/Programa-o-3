@@ -1,6 +1,13 @@
-package unikit;
+package Logica;
 import java.util.Scanner;
+/*
+@author André
+@author Lucas
+@author Valmir
+@author Pedro
+ */
 public class Unikut {
+
 	private Conta[] contas;
 	private int indiceConta;
 	private Scanner s = new Scanner(System.in);
@@ -22,7 +29,7 @@ public class Unikut {
 		s.nextLine();
 		while (opcao != 2) {
 			switch (opcao) {
-				case 1 : // Adicionar amigo.
+				case 1 -> { // Adicionar amigo.
 					System.out.println("\nDigite o login do amigo que quer adicionar:");
 					String friendLogin = s.nextLine();
 					while (!this.verificaLogin(friendLogin)) {
@@ -31,7 +38,7 @@ public class Unikut {
 					}
 					currentAccount.convidarAmigo(friendLogin);
 					System.out.println("\nUm convite foi enviado para o amigo: " + friendLogin);
-				break;
+				}
 			}
 			this.menuAddAmigos();
 		}
@@ -49,21 +56,19 @@ public class Unikut {
 		s.nextLine();
 		while (opcao != 3) {
 			switch (opcao) {
-			case 1 : // Alterar Apelido
+			case 1 -> { // Alterar Apelido
 				System.out.println("\nNovo Apelido:");
 				String newNickName = s.nextLine();
 				this.alterarContaNome(currentAccount.getLogin(), newNickName);
 				System.out.println("\nApelido alterado com sucesso!");
-			break;
-			case 2: // Alterar Senha
+			}
+			case 2 -> { // Alterar Senha
 				System.out.println("\nNova Senha:");
 				String newPassword = s.nextLine();
 				this.alterarContaSenha(currentAccount.getLogin(), newPassword);
 				System.out.println("\nSenha alterada com sucesso!");
-			break;
-                        default:
-                        System.out.println("\nComando inválido");
-                            break;
+			}
+			default -> System.out.println("\nComando inválido");
 			}
 			this.menuEditar();
 		}
@@ -145,7 +150,7 @@ public class Unikut {
 		s.nextLine();
 		while (opcao != 3) {
 			switch (opcao) {
-			case 1: // Visualizar recados
+			case 1 -> { // Visualizar recados
 				Mensagem[] mensagens = currentAccount.getMensagens();
 				if (mensagens != null) {
 					for (int i = 0; i < currentAccount.contadorDeMensagens; i++) {
@@ -155,19 +160,22 @@ public class Unikut {
 				} else {
 					System.out.println("Vc nao possui nenhum recado");
 				}
-			break;
-			case 2 : // Enviar recado
+			}
+			case 2 -> { // Enviar recado
 				System.out.println("digite o login do usuario que vai receber a mensagem:");
 				String login = s.nextLine();
+				while (!this.verificaLogin(login)) {
+					System.out.print("\nErro:\nNão encontramos esse usuario!!\nPor Favor digite novamente o login do seu amigo: ");
+					login = s.nextLine();
+				}
 				System.out.println("digite a mensagem a ser enviada:");
 				String mensagem = s.nextLine();
 				Mensagem msg = new Mensagem(login, currentAccount.getLogin(), mensagem);
 				currentAccount.addMensagem(msg);
 				Conta conta = pesquisarPessoas(login);
 				conta.addMensagem(msg);
-			break;
-                        default: System.out.println("\nComando inválido");
-                            break;
+			}
+			default -> System.out.println("\nComando inválido");
 			}
 			System.out.println();
 			menuRecados();
@@ -189,21 +197,19 @@ public class Unikut {
 		s.nextLine();
 		while (opcao != 5) {
 			switch (opcao) {
-			case 1 : // Editar perfil
+			case 1 -> { // Editar perfil
 				menuEditar();
-			break;
-			case 2 : // Exibir amigos
+			}
+			case 2 -> { // Exibir amigos
 				mostrarAmigos();
-			break;
-			case 3 : // Adicionar amigos
+			}
+			case 3 -> { // Adicionar amigos
 				menuAddAmigos();
-			break;
-			case 4: // Enviar recados
+			}
+			case 4 -> { // Enviar recados
 				menuRecados();
-			break;
-                        default:
-                            System.out.println("\nComando inválido");
-                            break;
+			}
+			default -> System.out.println("\nComando inválido");
 			}
 			this.menuLogado();
 			opcao = s.nextInt();
@@ -230,17 +236,15 @@ public class Unikut {
 		s.nextLine();
 		while (opcao != 3) {
 			switch (opcao) {
-			case 1 :
+			case 1 -> {
 				this.criarNovaConta();
 				this.menuLogado();
-			break;
-			case 2 :
+			}
+			case 2 -> {
 				this.login();
 				this.menuLogado();
-			break;
-                        default: 
-                            System.out.println("\nComando inválido");
-                            break;
+			}
+			default -> System.out.println("\nComando inválido");
 			}
 		}
 		System.out.println("Unikut encerrado!!!");
