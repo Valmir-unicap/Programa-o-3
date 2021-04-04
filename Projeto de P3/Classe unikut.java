@@ -4,8 +4,8 @@ import java.util.Scanner;
 Equipe:
 @author André
 @author Lucas
-@author Valmir
 @author Pedro
+@author Valmir
  */
 public class Unikut {
 
