@@ -1,4 +1,5 @@
 /*
+
 Observação: Um vilão pode ter o mesmo código de heroi, pois são de classes diferentes.
 Falta: checap de banco de armazenamento, para vilões e heróis antigos da marvel antes do ultimato.
 */
