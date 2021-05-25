@@ -1,5 +1,5 @@
 package Executar;
-import Logica.;
+import Logica.*;
     public class Aplicacao {
  /*
  Equipe:
