@@ -1,15 +1,10 @@
-package Executar;
-import Logica.*;
-    public class Aplicacao {
- /*
- Equipe:
- @author André
- @author Lucas
- @author Pedro
- @author Valmir
+package unikut.pkg2gq;
+/*
+ * @author valmir
  */
+public class Unikut2GQ {
     public static void main(String[] args) {
         Unikut social = new Unikut();
-        social.menuStart();
-    }
+        social.startView();
+    }   
 }
