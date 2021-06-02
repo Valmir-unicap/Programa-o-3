@@ -51,9 +51,11 @@ public class Unikut {
                                         t.start();
                                         try{
                                         novo.join();//junção, ela se dividiu porém vai se encontrar de novo.
-                                        t.join();//junção, ela se dividiu porém vai se encontrar de novo.
+                                        mostrarAmigos();
+                                        t.join();//junção, ela se dividiu porém vai se encontrar de novo.                                       
+                                        menuRecados();//envia um recado assim que o 
                                         }catch(InterruptedException e){
-                                            e.printStackTrace();
+                                            System.out.println("erro!!!");
                                         }
                                         System.out.println("Thread finalizada!");//Fim da Thread
                                         
