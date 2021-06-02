@@ -1,21 +1,24 @@
-package Logica;
-/*
-Equipe:
-@author André
-@author Lucas
-@author Pedro
-@author Valmir
- */
+package unikut.pkg2gq;
+
 public class Mensagem {
     private String para;
     private String de;
     private String mensagem;
+    private String senha;
 
-    public Mensagem(String para, String de, String mensagem) {
+    public Mensagem(String para, String de, String mensagem) { //Construtor 2
         super();
         this.para = para;
         this.de = de;
         this.mensagem = mensagem;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getPara() {
