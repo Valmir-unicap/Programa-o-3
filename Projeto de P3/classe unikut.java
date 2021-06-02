@@ -2,7 +2,7 @@ package unikut.pkg2gq;
 
 //import View.UnikutView;
 /*
- * @author Lucas
+ * @author Valmir
  */
 public class Unikut {
 
