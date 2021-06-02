@@ -1,19 +1,15 @@
-package Logica;
+package unikut.pkg2gq;
 /*
-Equipe:
- @author André
- @author Lucas
- @author Pedro
- @author Valmir
+ * @author Valmir
  */
 public class Conta implements Comparable<Conta> {
 	private String login;
 	private String nome;
 	private String senha;
 	private Amigo[] amigos;
-	int contadorDeAmigos = 0;
+	private int contadorDeAmigos = 0;
 	private Mensagem[] mensagens;
-	int contadorDeMensagens = 0;
+	private int contadorDeMensagens = 0;
 
 	public Conta(String login, String nome, String senha) {
 		this.login = login;
@@ -33,6 +29,10 @@ public class Conta implements Comparable<Conta> {
 	public void addMensagem(Mensagem mensagem) {
 		mensagens[contadorDeMensagens] = mensagem;
 		contadorDeMensagens++;
+	}
+	
+	public int getQuantidadeDeMensagens() {
+		return contadorDeMensagens;
 	}
 	
 	public int getQuantidadeDeAmigos() {
