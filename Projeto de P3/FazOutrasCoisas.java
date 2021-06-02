@@ -8,7 +8,7 @@ public class FazOutrasCoisas extends Thread{
     public void run(){
         int i;
         for(i=1;i>0;i=i-1){
-            System.out.println("Thread continuando a execução");
+            System.out.println("Thread paralela em execução");
         }
     }  
 }
