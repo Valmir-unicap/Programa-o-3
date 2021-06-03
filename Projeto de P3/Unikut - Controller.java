@@ -1,9 +1,15 @@
 package unikut.pkg2gq;
 
-//import View.UnikutView;
+import View.UnikutView;
+
 /*
- * @author Valmir
+      Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author Valmir
  */
+
 public class Unikut {
 
 	private Conta[] contas;
