@@ -1,6 +1,10 @@
 package unikut.pkg2gq;
 /*
- * @author valmir
+     Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author valmir
  */
     public class Amigo {
         private String para;
