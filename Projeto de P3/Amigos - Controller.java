@@ -4,7 +4,7 @@ package unikut.pkg2gq;
    @author André
    @author Lucas
    @author Pedro
-   @author valmir
+   @author Valmir
  */
     public class Amigo {
         private String para;
