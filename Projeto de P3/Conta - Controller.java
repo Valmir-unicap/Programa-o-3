@@ -1,6 +1,10 @@
 package unikut.pkg2gq;
 /*
- * @author Valmir
+     Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author Valmir
  */
 public class Conta implements Comparable<Conta> {
 	private String login;
