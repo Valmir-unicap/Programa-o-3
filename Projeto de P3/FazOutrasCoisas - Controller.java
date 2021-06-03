@@ -1,7 +1,14 @@
 package unikit;
 /*
- * @author valmir
+     Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author Valmir
  */
+
+//Observação: A Thread é acionada, quando o usuário adiciona um novo amigo.
+
 public class FazOutrasCoisas extends Thread{
     
     @Override
