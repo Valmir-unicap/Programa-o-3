@@ -1,4 +1,11 @@
 package unikut.pkg2gq;
+/*
+     Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author Valmir
+*/
 
 public class Mensagem {
     private String para;
