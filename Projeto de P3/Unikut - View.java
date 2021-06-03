@@ -1,14 +1,24 @@
-package unikut.pkg2gq;
+//package unikut.pkg2gq;
 
-//package View;
+package View;
 
 import java.util.Scanner;
-/*
+
 import Logica.Amigo;
 import Logica.Conta;
 import Logica.Mensagem;
 import Logica.Unikut;
+
+/*
+     Equipe:
+   @author André
+   @author Lucas
+   @author Pedro
+   @author Valmir
 */
+
+//Observação: A Thread é acionada, quando o usuário adiciona um novo amigo.
+
 public class UnikutView {
 	private Scanner s = new Scanner(System.in);
 	private Unikut controller;
