@@ -1,7 +1,7 @@
 # Programação-3
 ## *Atividades e avaliações, realizadas na disciplina de programação 3 - JAVA* ##
 
-### *Conteúdo aprendidos* ###
+### *Conteúdos aprendidos* ###
 - Herança
 - POO
 - Get e Set
